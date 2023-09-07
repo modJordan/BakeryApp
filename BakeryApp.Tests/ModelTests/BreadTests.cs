@@ -1,7 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using BakeryApp;
+using BakeryApp.Models;
 using System.Collections.Generic;
 using System;
+using System.ComponentModel;
 
 namespace BakeryApp.Tests
 {
@@ -10,11 +11,16 @@ namespace BakeryApp.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void BreadCost_CreatesInstanceOfBreadPrice_Bread()
+    public void BreadCostCalculation_CalculateForTwoLoaves_Ten()
     {
-      Bread newBread = new Bread(2);
+      //Arrange
+      int numberOfLoaves = 2;
 
-      Assert.AreEqual(10, Bread.CalculateCost(2));
+      //Act
+      int result = Bread.CalculateCost(numberOfLoaves);
+
+      //Assert
+      Assert.AreEqual(10, result);
     }
   }
 }
