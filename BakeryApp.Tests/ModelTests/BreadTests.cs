@@ -61,5 +61,19 @@ namespace BakeryApp.Tests
       //Assert
       Assert.AreEqual(25, result);
     }
+
+    [TestMethod]
+    public void PastryCostCalculation_CalculateForTwoPastries_Four()
+    {
+
+      //Arrange
+      int numberOfPastries = 2;
+
+      //Act 
+      int result = Pastry.CalculateCost(numberOfPastries);
+
+      //Assert
+      Assert.AreEqual(4, result);
+    }
   }
 }
