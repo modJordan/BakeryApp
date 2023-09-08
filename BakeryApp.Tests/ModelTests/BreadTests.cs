@@ -22,5 +22,18 @@ namespace BakeryApp.Tests
       //Assert
       Assert.AreEqual(10, result);
     }
+
+    [TestMethod]
+    public void BreadCostCalculation_CalculateForThreeLoaves_Ten()
+    {
+      // Arrange
+      int numberOfLoaves = 3;
+
+      //Act
+      int result = Bread.CalculateCost(numberOfLoaves);
+
+      //Assert
+      Assert.AreEqual(10, result);
+    }
   }
 }
