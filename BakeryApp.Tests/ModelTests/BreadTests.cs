@@ -35,5 +35,31 @@ namespace BakeryApp.Tests
       //Assert
       Assert.AreEqual(10, result);
     }
+
+    [TestMethod]
+    public void BreadCostCalculation_CalculateForFourLoaves_Fifteen()
+    {
+      //Arrange
+      int numberOfLoaves = 4;
+
+      //Act
+      int result = Bread.CalculateCost(numberOfLoaves);
+
+      //Assert
+      Assert.AreEqual(15, result);
+    }
+
+    [TestMethod]
+    public void BreadCostCalculation_CalculateForSevenLoaves_TwentyFive()
+    {
+      //Arrange 
+      int numberOfLoaves = 7;
+
+      //Act 
+      int result = Bread.CalculateCost(numberOfLoaves);
+
+      //Assert
+      Assert.AreEqual(25, result);
+    }
   }
 }
