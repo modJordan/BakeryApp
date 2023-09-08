@@ -9,7 +9,7 @@ namespace BakeryApp
   {
     static void Main()
     {
-      Console.WriteLine("        Welcome to Pierre's Bakery!");
+      Console.WriteLine("        𝓦𝓮𝓵𝓬𝓸𝓶𝓮 𝓽𝓸 𝓟𝓲𝓮𝓻𝓻𝓮'𝓼 𝓑𝓪𝓴𝓮𝓻𝔂!");
       Console.WriteLine("✧･ﾟ: *✧･ﾟ:* *:･ﾟ✧*:･ﾟ✧ ✧･ﾟ: *✧･ﾟ:* *:･ﾟ✧*:･ﾟ✧");
       Console.WriteLine("           ");
       Console.WriteLine("Type (menu) to see our Menu!");
@@ -17,15 +17,15 @@ namespace BakeryApp
       if (menuChoice == "menu" || menuChoice == "Menu" || menuChoice == "MENU")
       {
         Console.WriteLine("           ");
-        Console.WriteLine("           Menu");
+        Console.WriteLine("           𝓜𝓮𝓷𝓾");
         Console.WriteLine("   - - ┈┈∘┈˃̶༒˂̶┈∘┈┈ - -");
-        Console.WriteLine("✧ Bread Loaf     $5.00");
-        Console.WriteLine("✧ Pastry         $2.00");
+        Console.WriteLine("✧ 𝓑𝓻𝓮𝓪𝓭 𝓛𝓸𝓪𝓯     $5.00");
+        Console.WriteLine("✧ 𝓟𝓪𝓼𝓽𝓻𝔂         $2.00");
         Console.WriteLine("           ");
-        Console.WriteLine(".·:*¨༺  Daily special from 1 - 5pm ༻¨*:·.");
+        Console.WriteLine(".·:*¨༺  𝔻𝕒𝕚𝕝𝕪 𝕤𝕡𝕖𝕔𝕚𝕒𝕝 𝕗𝕣𝕠𝕞 𝟙 - 𝟝𝕡𝕞 ༻¨*:·.");
         Console.WriteLine("           ");
-        Console.WriteLine("✧ Buy 2 bread loaves get 1 FREE");
-        Console.WriteLine("✧ Buy 3 pastries get 1 FREE");
+        Console.WriteLine("✧ 𝔹𝕦𝕪 𝟚 𝕓𝕣𝕖𝕒𝕕 𝕝𝕠𝕒𝕧𝕖𝕤 𝕘𝕖𝕥 𝟙 𝔽ℝ𝔼𝔼");
+        Console.WriteLine("✧ 𝔹𝕦𝕪 𝟛 𝕡𝕒𝕤𝕥𝕣𝕚𝕖𝕤 𝕘𝕖𝕥 𝟙 𝔽ℝ𝔼𝔼");
         Console.WriteLine("           ");
         Console.WriteLine("How many loaves of bread would you like?");
         int numberOfLoaves = int.Parse(Console.ReadLine());
