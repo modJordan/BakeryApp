@@ -4,7 +4,13 @@ namespace BakeryApp.Models
 {
   public class Bread
   {
-    public static int CostPerLoaf = 5;
+    private static int _costPerLoaf = 5;
+
+    public static int CostPerLoaf
+    {
+      get { return _costPerLoaf; }
+      set { _costPerLoaf = value; }
+    }
 
     public static int CalculateCost(int numberOfLoaves)
     {
@@ -15,7 +21,14 @@ namespace BakeryApp.Models
 
   public class Pastry
   {
-    public static int CostPerPastry = 2;
+    private static int _costPerPastry = 2;
+
+    public static int CostPerPastry
+    {
+      get { return _costPerPastry; }
+      set { _costPerPastry = value; }
+    }
+
 
     public static int CalculateCost(int numberOfPastries)
     {
